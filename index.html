@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7ED321" />
+  <title>ClassIQ — Empower Your Learning Journey</title>
+  <meta name="description" content="ClassIQ is an EdTech platform offering certified courses in Web Development, Data Science and App Development." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="ClassIQ home">
+        <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#7ED321"/>
+          <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+        </svg>
+        <span>ClassIQ</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Primary">
+        <a href="index.html" class="nav-link is-active" aria-current="page">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="signin.html" class="btn btn--dark btn--sm">Login</a>
+        <a href="signup.html" class="btn btn--primary btn--sm">Signup</a>
+      </div>
+
+      <button class="icon-btn navbar__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 64 64" width="24" height="24" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#7ED321"/>
+            <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+          </svg>
+          <span>ClassIQ</span>
+        </a>
+        <button class="icon-btn" id="drawer-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 5.7 18.3 4.3 16.9 10.6 12 4.3 5.7 5.7 4.3l4.9 4.9 5.1-5.1z"/></svg>
+        </button>
+      </div>
+      <nav class="drawer__nav" aria-label="Mobile">
+        <a href="index.html" class="nav-link is-active">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+      </nav>
+      <div class="drawer__actions">
+        <a href="signin.html" class="btn btn--dark btn--block">Login</a>
+        <a href="signup.html" class="btn btn--primary btn--block">Signup</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <h1 id="hero-title">
+            Empower Your<br />Learning Journey<br />with <span class="text-bold">ClassIQ</span>
+          </h1>
+          <p class="hero__text">
+            Industry-certified courses designed by experts, built for working
+            professionals. Learn flexibly, build real projects and get hired faster.
+          </p>
+          <div class="hero__cta">
+            <a href="courses.html" class="btn btn--primary btn--lg">
+              Explore Courses
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.4 1.4L16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8-8-8z"/></svg>
+            </a>
+            <a href="signup.html" class="btn btn--outline btn--lg">Start for free</a>
+          </div>
+          <!-- <div class="hero__stats">
+            <div class="stat"><p class="stat__value">5,000+</p><p class="stat__label">Companies hiring</p></div>
+            <div class="stat"><p class="stat__value">120k+</p><p class="stat__label">Active learners</p></div>
+            <div class="stat"><p class="stat__value">4.8★</p><p class="stat__label">Average rating</p></div>
+          </div> -->
+        </div>
+        <div class="hero__media reveal" style="--delay:.12s">
+          <img src="assets/hero-illustration.svg" alt="A smiling learner waving hello" width="420" height="420" fetchpriority="high" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Trusted by ===== -->
+    <section class="trusted" aria-label="Trusted by companies">
+      <div class="container">
+        <p class="trusted__title">Trusted by 5,000+ Companies Worldwide</p>
+        <ul class="trusted__list">
+          <li>Google</li><li>Netflix</li><li>Airbnb</li><li>Amazon</li><li>Facebook</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Featured courses ===== -->
+    <section class="section" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 id="courses-title">Certified Courses for <span class="text-primary-dark">Professionals</span></h2>
+          <!-- <p class="section__sub">Pick a track, finish a capstone project and earn a certificate that recruiters recognise.</p> -->
+        </div>
+        <div class="grid grid--3">
+          <article class="feature-card reveal" style="--delay:0s">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript and modern frameworks — build production-ready sites.</p>
+            <a href="courses.html" class="btn btn--primary btn--sm">Enroll Now</a>
+          </article>
+          <article class="feature-card reveal" style="--delay:.1s">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v10H3V3zm1 1v8h16V4H4zm-1 10h6v2H3v-2zm8 0h10v2H11v-2zM3 17h10v2H3v-2zm12 0h6v2h-6v-2z"/></svg>
+            </div>
+            <h3>Data Science</h3>
+            <p>Python, statistics and machine learning with real-world datasets.</p>
+            <a href="courses.html" class="btn btn--primary btn--sm">Enroll Now</a>
+          </article>
+          <article class="feature-card reveal" style="--delay:.2s">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h10V4H7zm2 3h6v2H9V7zm0 4h6v2H9v-2z"/></svg>
+            </div>
+            <h3>App Development</h3>
+            <p>Ship native-quality iOS and Android apps from a single codebase.</p>
+            <a href="courses.html" class="btn btn--primary btn--sm">Enroll Now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== All-in-one ===== -->
+    <section class="section" aria-labelledby="solution-title">
+      <div class="container split">
+        <div class="split__media reveal">
+          <div class="card-surface">
+            <img src="assets/hero-illustration.svg" alt="" width="420" height="420" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="split__content reveal" style="--delay:.12s">
+          <h2 id="solution-title">All-In-One Solution</h2>
+          <!-- <p class="section__sub">Everything you need to go from first lesson to first job offer, in one place.</p> -->
+          <ul class="check-list">
+            <li>
+              <svg class="check-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 13.6-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z"/></svg>
+              <div><strong>Flexible learning</strong><p>Learn at your own pace with lifetime access to every lesson.</p></div>
+            </li>
+            <li>
+              <svg class="check-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 13.6-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z"/></svg>
+              <div><strong>Expert instructors</strong><p>Taught by practitioners currently working in the industry.</p></div>
+            </li>
+            <li>
+              <svg class="check-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 13.6-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z"/></svg>
+              <div><strong>Interactive community</strong><p>Live sessions, peer reviews and a mentor who answers within hours.</p></div>
+            </li>
+          </ul>
+          <a href="signup.html" class="btn btn--primary">
+            Join Now
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.4 1.4L16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#7ED321"/>
+            <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+          </svg>
+          <span>ClassIQ</span>
+        </a>
+        <p>Learn in-demand skills from industry experts and join a community of professionals growing together.</p>
+        <form id="subscribe-form" class="subscribe" novalidate>
+          <label class="subscribe__label" for="subscribe-email">Subscribe to our newsletter</label>
+          <div class="subscribe__row">
+            <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" autocomplete="email" aria-label="Email address" />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </div>
+          <p class="field-error" id="subscribe-error" role="alert" hidden></p>
+        </form>
+      </div>
+
+      <div class="footer__col">
+        <h4>Course &amp; Business</h4>
+        <ul>
+          <li><a href="courses.html">Web Development</a></li>
+          <li><a href="courses.html">Data Science</a></li>
+          <li><a href="courses.html">App Development</a></li>
+          <li><a href="courses.html">For Business</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="courses.html">About</a></li>
+          <li><a href="courses.html">Careers</a></li>
+          <li><a href="courses.html">Blog</a></li>
+          <li><a href="courses.html">Contact</a></li>
+        </ul>
+      </div>
+
+      
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> ClassIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status">You're subscribed. Welcome aboard!</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

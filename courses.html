@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7ED321" />
+  <title>All Courses — ClassIQ</title>
+  <meta name="description" content="Nine expert-led tracks across web, data and mobile. Filter by category or search to find yours." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="ClassIQ home">
+        <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#7ED321"/>
+          <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+        </svg>
+        <span>ClassIQ</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link is-active" aria-current="page">Courses</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="signin.html" class="btn btn--dark btn--sm">Login</a>
+        <a href="signup.html" class="btn btn--primary btn--sm">Signup</a>
+      </div>
+      <button class="icon-btn navbar__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 64 64" width="24" height="24" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#7ED321"/>
+            <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+          </svg>
+          <span>ClassIQ</span>
+        </a>
+        <button class="icon-btn" id="drawer-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 5.7 18.3 4.3 16.9 10.6 12 4.3 5.7 5.7 4.3l4.9 4.9 5.1-5.1z"/></svg>
+        </button>
+      </div>
+      <nav class="drawer__nav" aria-label="Mobile">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link is-active">Courses</a>
+      </nav>
+      <div class="drawer__actions">
+        <a href="signin.html" class="btn btn--dark btn--block">Login</a>
+        <a href="signup.html" class="btn btn--primary btn--block">Signup</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Banner -->
+    <section class="container courses-banner" aria-labelledby="courses-hero">
+      <div class="courses-banner__grid">
+        <div>
+          <h1 id="courses-hero">Enroll in Your Fav Courses</h1>
+          <p class="section__sub">Nine expert-led tracks across web, data and mobile. Filter by category or search to find yours.</p>
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+            <input type="search" id="course-search" placeholder="Search courses…" aria-label="Search courses" />
+          </div>
+        </div>
+        <div class="courses-banner__media">
+          <img src="assets/laptop-illustration.svg" alt="" width="420" height="420" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters + grid -->
+    <section class="container section" aria-labelledby="all-courses">
+      <div class="courses-toolbar">
+        <h2 id="all-courses" class="courses-heading">
+          All Courses
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+        </h2>
+        <div class="chip-group" role="group" aria-label="Filter by category" id="category-filters">
+          <button class="chip is-active" data-category="All" aria-pressed="true">All</button>
+          <button class="chip" data-category="Web Development" aria-pressed="false">Web Development</button>
+          <button class="chip" data-category="Data Science" aria-pressed="false">Data Science</button>
+          <button class="chip" data-category="App Development" aria-pressed="false">App Development</button>
+        </div>
+      </div>
+
+      <p class="courses-count" id="courses-count" aria-live="polite"></p>
+      <div class="grid grid--3" id="course-grid"></div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <h3>No courses match "<span id="empty-query"></span>"</h3>
+        <p>Try a different keyword or clear the category filter.</p>
+        <button class="btn btn--outline" id="clear-filters">Clear filters</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#7ED321"/>
+            <path d="M18 44 L26 18 L32 36 L38 18 L46 44" fill="none" stroke="#0E1A0A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#0E1A0A"/>
+          </svg>
+          <span>ClassIQ</span>
+        </a>
+        <p>Learn in-demand skills from industry experts and join a community of professionals growing together.</p>
+        <form id="subscribe-form" class="subscribe" novalidate>
+          <label class="subscribe__label" for="subscribe-email">Subscribe to our newsletter</label>
+          <div class="subscribe__row">
+            <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" autocomplete="email" aria-label="Email address" />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </div>
+          <p class="field-error" id="subscribe-error" role="alert" hidden></p>
+        </form>
+      </div>
+      <div class="footer__col">
+        <h4>Course &amp; Business</h4>
+        <ul>
+          <li><a href="courses.html">Web Development</a></li>
+          <li><a href="courses.html">Data Science</a></li>
+          <li><a href="courses.html">App Development</a></li>
+          <li><a href="courses.html">For Business</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="courses.html">About</a></li>
+          <li><a href="courses.html">Careers</a></li>
+          <li><a href="courses.html">Blog</a></li>
+          <li><a href="courses.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> ClassIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status">You're subscribed. Welcome aboard!</div>
+
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

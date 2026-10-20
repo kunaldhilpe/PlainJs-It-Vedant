@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Illustration of a smiling learner waving hello</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF8D6"/>
+      <stop offset="1" stop-color="#C9EFA0"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6C9A6"/>
+      <stop offset="1" stop-color="#E9AE84"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B2B2B"/>
+      <stop offset="1" stop-color="#121212"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft blob background -->
+  <path d="M210 28c78-14 160 34 180 112 21 83-26 166-104 198-76 31-170 12-218-58C19 207 29 112 95 65c33-24 73-30 115-37z" fill="url(#bg)"/>
+
+  <!-- floating sparkles -->
+  <g fill="#7ED321">
+    <path d="M70 110l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/>
+    <path d="M352 86l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+    <circle cx="340" cy="300" r="6"/>
+    <circle cx="86" cy="310" r="4"/>
+  </g>
+
+  <!-- body -->
+  <path d="M120 420c0-70 40-112 90-112s90 42 90 112z" fill="url(#shirt)"/>
+  <path d="M190 308h40v20c0 11-9 20-20 20s-20-9-20-20z" fill="#D89A72"/>
+
+  <!-- waving arm -->
+  <path d="M292 330c20-20 34-56 36-92" fill="none" stroke="url(#shirt)" stroke-width="32" stroke-linecap="round"/>
+  <circle cx="330" cy="222" r="24" fill="url(#skin)"/>
+  <g stroke="url(#skin)" stroke-width="12" stroke-linecap="round">
+    <line x1="318" y1="206" x2="306" y2="178"/>
+    <line x1="332" y1="200" x2="330" y2="170"/>
+    <line x1="346" y1="206" x2="354" y2="178"/>
+  </g>
+
+  <!-- head -->
+  <ellipse cx="210" cy="200" rx="74" ry="82" fill="url(#skin)"/>
+  <!-- ears -->
+  <circle cx="138" cy="206" r="14" fill="#E9AE84"/>
+  <circle cx="282" cy="206" r="14" fill="#E9AE84"/>
+  <!-- hair -->
+  <path d="M136 190c-4-62 36-100 86-98 48 2 78 38 76 90-16-24-30-40-56-44-10 20-28 32-52 34-16 2-38 6-54 18z" fill="#1E1E1E"/>
+  <!-- eyebrows -->
+  <path d="M166 178c10-8 24-8 34-2" fill="none" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M222 176c10-6 24-6 34 2" fill="none" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="183" cy="206" rx="8" ry="10" fill="#1E1E1E"/>
+  <ellipse cx="239" cy="206" rx="8" ry="10" fill="#1E1E1E"/>
+  <circle cx="186" cy="202" r="3" fill="#fff"/>
+  <circle cx="242" cy="202" r="3" fill="#fff"/>
+  <!-- cheeks -->
+  <circle cx="162" cy="232" r="10" fill="#F39A8B" opacity=".55"/>
+  <circle cx="260" cy="232" r="10" fill="#F39A8B" opacity=".55"/>
+  <!-- smile -->
+  <path d="M184 246c14 16 38 16 54 0" fill="none" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+</svg>
