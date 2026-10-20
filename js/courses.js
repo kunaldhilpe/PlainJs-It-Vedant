@@ -1,7 +1,3 @@
-/* ============================================
-   ClassIQ — courses page
-   Static catalogue, client-side search + filter
-   ============================================ */
 (function () {
   'use strict';
 
