@@ -3,8 +3,8 @@
 
   var ALL_COURSES = [
     { id: 1, title: 'Full-Stack Web Development', category: 'Web Development', level: 'Beginner', duration: '12 weeks', students: 12400, price: 4999, popular: true },
-    { id: 2, title: 'React & Modern Frontend', category: 'Web Development', level: 'Intermediate', duration: '8 weeks', students: 9800, price: 3999 },
-    { id: 3, title: 'Python for Data Science', category: 'Data Science', level: 'Beginner', duration: '10 weeks', students: 15200, price: 4499, popular: true },
+    { id: 2, title: 'React & Modern Frontend', category: 'Web Development', level: 'Intermediate', duration: '8 weeks', students: 9800, price: 3999 ,popular: true },
+    { id: 3, title: 'Python for Data Science', category: 'Data Science', level: 'Beginner', duration: '10 weeks', students: 15200, price: 4499, popular: false },
     { id: 4, title: 'Machine Learning Foundations', category: 'Data Science', level: 'Advanced', duration: '14 weeks', students: 6100, price: 6999 },
     { id: 5, title: 'Flutter App Development', category: 'App Development', level: 'Intermediate', duration: '9 weeks', students: 7300, price: 4299 },
     { id: 6, title: 'iOS with Swift', category: 'App Development', level: 'Beginner', duration: '10 weeks', students: 5400, price: 4799 },
